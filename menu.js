@@ -1,10 +1,16 @@
 const header = document.querySelector('.site-header')
 const burger = document.querySelector('.burger')
+const burgerIcon = burger ? burger.querySelector('.burger-icon') : null
 const megaWho = document.getElementById('mega-who')
 const megaWhat = document.getElementById('mega-what')
 
 function setHeaderSolid(on) {
   header.classList.toggle('solid', !!on)
+}
+
+function setHeaderPanel(panel) {
+  header.classList.toggle('what', panel === 'what')
+  header.classList.toggle('who', panel === 'who')
 }
 
 function openMega(panel) {
@@ -15,7 +21,12 @@ function openMega(panel) {
   const isWhat = panel === 'what'
   burger.classList.toggle('open', isWhat)
   burger.setAttribute('aria-expanded', String(isWhat))
+  if (burgerIcon) {
+    burgerIcon.classList.toggle('fa-bars', !isWhat)
+    burgerIcon.classList.toggle('fa-xmark', isWhat)
+  }
   setHeaderSolid(true)
+  setHeaderPanel(panel)
   document.querySelectorAll('.nav-item.has-mega .nav-link').forEach(l => l.classList.remove('active'))
   const activeBtn = document.querySelector(`.nav-item.has-mega[data-panel="${panel}"] .nav-link`)
   if (activeBtn) activeBtn.classList.add('active')
@@ -26,7 +37,12 @@ function closeMega() {
   megaWhat.classList.remove('open')
   burger.classList.remove('open')
   burger.setAttribute('aria-expanded', 'false')
+  if (burgerIcon) {
+    burgerIcon.classList.add('fa-bars')
+    burgerIcon.classList.remove('fa-xmark')
+  }
   setHeaderSolid(false)
+  header.classList.remove('who', 'what')
   document.querySelectorAll('.nav-item.has-mega .nav-link').forEach(l => l.classList.remove('active'))
 }
 

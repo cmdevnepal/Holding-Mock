@@ -2,7 +2,7 @@
 
 :root {
   --primary: #1E3A5F;
-  --secondary: #405C75;
+  --secondary: #3c5c77;
   --accent: #D4A762;
   --background: #F5F3EF;
   --surface: #FFFFFF;
@@ -17,7 +17,7 @@
   --font-primary: 'Manrope', sans-serif;
   --font-secondary: 'Source Sans 3', sans-serif;
   --page-pad: clamp(24px, 7vw, 100px);
-  --shade-header: var(--primary);
+  --shade-header: var(--shade-medium);
   --shade-medium: var(--secondary);
   --shade-light: color-mix(in srgb, var(--secondary) 60%, var(--surface) 40%);
 }
@@ -38,7 +38,7 @@ html, body {
 }
 
 .site-footer { background: var(--shade-medium); color: var(--surface); }
-.footer-inner { width: 100%; max-width: min(1200px, 96%); margin: 0 auto; padding: clamp(28px, 6vw, 60px) var(--page-pad); }
+.footer-inner { width: 100%; padding: clamp(28px, 6vw, 60px) var(--page-pad); }
 .footer-grid { display: grid; grid-template-columns: 1.2fr repeat(4, 1fr); gap: clamp(16px, 2vw, 32px); align-items: start; }
 .footer-title { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); opacity: .9; margin: 0 0 8px; }
 .footer-links, .footer-contact { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
@@ -128,23 +128,27 @@ a:hover {
 }
 
 .main-nav .nav-link { position: relative; }
-.main-nav .nav-link.active::before {
+.main-nav .nav-link::before {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -10px;
-  height: 4px;
+  bottom: -18px;
+  height: 3px;
   background: var(--highlight);
-  border-radius: 2px;
+  border-radius: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  opacity: 0;
+  transition: transform .28s cubic-bezier(0.22, 1, 0.36, 1), opacity .28s ease;
+}
+.main-nav .nav-link.active::before {
+  transform: scaleX(1);
+  opacity: 1;
 }
 
-.nav-item.has-mega .nav-link::after {
-  content: "▾";
-  font-size: 12px;
-  margin-left: 8px;
-  opacity: .7;
-}
+.nav-item.has-mega .nav-link i.fa-chevron-down { font-size: 12px; margin-left: 8px; opacity: .7; transition: transform .2s ease; }
+.nav-item.has-mega .nav-link.active i.fa-chevron-down { transform: rotate(180deg); }
 
 .site-header .nav-link:hover,
 .site-header .main-nav a:hover {
@@ -152,41 +156,36 @@ a:hover {
 }
 
 .burger {
-  width: 36px;
-  height: 28px;
+  width: 44px;
+  height: 22px;
   border: 0;
   background: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  position: relative;
   padding: 0;
   cursor: pointer;
 }
 
 .burger span {
-  display: block;
-  width: 28px;
+  position: absolute;
+  left: 6px;
+  right: 6px;
   height: 2px;
   background: var(--text);
-  margin: 4px 0;
-  transition: transform .2s ease, opacity .2s ease;
+  border-radius: 1px;
+  transform-origin: center;
+  transition: transform .25s ease, top .25s ease, opacity .2s ease;
 }
 
-.site-header .burger span {
-  background: var(--surface);
-}
+.site-header .burger span { background: var(--surface); }
 
-.burger.open span:nth-child(1) {
-  transform: translateY(6px) rotate(45deg);
-}
+.burger span:nth-child(1) { top: 4px; }
+.burger span:nth-child(2) { top: 10px; }
+.burger span:nth-child(3) { top: 16px; }
 
-.burger.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.burger.open span:nth-child(3) {
-  transform: translateY(-6px) rotate(-45deg);
-}
+.burger.open span:nth-child(1) { top: 10px; transform: rotate(45deg); }
+.burger.open span:nth-child(2) { opacity: 0; }
+.burger.open span:nth-child(3) { top: 10px; transform: rotate(-45deg); }
 
 .mega {
   position: absolute;
@@ -222,14 +221,22 @@ a:hover {
 }
 
 .mega-inner {
-  width: min(1200px, 100%);
-  margin: 0 auto;
-  padding: 60px var(--page-pad) 40px;
+  width: 100%;
+  margin: 0;
+  padding: 72px var(--page-pad) 40px;
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: 1fr auto;
   gap: 32px;
   position: relative;
   z-index: 1;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: transform .35s ease, opacity .35s ease;
+}
+
+.mega.open .mega-inner {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .mega-group {
@@ -247,6 +254,26 @@ a:hover {
   text-transform: uppercase;
   color: var(--surface);
   opacity: .7;
+}
+
+.mega.open .mega-title {
+  color: var(--accent);
+  opacity: 1;
+}
+
+.mega .mega-desc,
+.mega .mega-title,
+.mega .mega-inner ul {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: transform .35s ease .05s, opacity .35s ease .05s;
+}
+
+.mega.open .mega-desc,
+.mega.open .mega-title,
+.mega.open .mega-inner ul {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .mega-desc {
@@ -410,7 +437,8 @@ a:hover {
   }
 }
 .mega-inner > div:last-child {
-  justify-self: center;
+  justify-self: end;
+  align-self: start;
 }
 .split {
   background: var(--surface);
@@ -563,7 +591,7 @@ a:hover {
 
 /* Portfolio section */
 .portfolio {
-  background: var(--shade-medium);
+  background:  var(--primary);
   color: var(--surface);
 }
 
