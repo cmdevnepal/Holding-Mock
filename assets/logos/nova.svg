@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+<rect width="300" height="200" fill="#ffffff"/>
+<circle cx="80" cy="100" r="38" fill="#00C49A"/>
+<circle cx="80" cy="100" r="20" fill="#C7FFE3"/>
+<text x="150" y="115" font-size="28" font-family="Arial, sans-serif" fill="#222">NOVA</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+<rect width="300" height="200" fill="#ffffff"/>
+<path d="M40 140 L120 60 L160 100 L80 180 Z" fill="#7B61FF"/>
+<rect x="55" y="75" width="50" height="20" fill="#D0C4FF"/>
+<text x="170" y="115" font-size="28" font-family="Arial, sans-serif" fill="#222">GANS</text>
+</svg>

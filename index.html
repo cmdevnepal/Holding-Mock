@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script defer src="menu.js"></script>
+    <script defer src="data/slides.js"></script>
+    <script defer src="data/portfolio.js"></script>
+    <script defer src="portfolio-slider.js"></script>
+    <script defer src="data/history.js"></script>
+    <script defer src="history-slider.js"></script>
+    <script defer src="slider.js"></script>
+    <script defer src="data/brands.js"></script>
+    <script defer src="brands-slider.js"></script>
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">HOLDING CO.</div>
+            <nav class="main-nav" aria-label="Main">
+                <ul>
+                    <li class="nav-item has-mega" data-panel="who"><button class="nav-link" type="button">Who We Are</button></li>
+                    <li class="nav-item has-mega" data-panel="what"><button class="nav-link" type="button">What We Do</button></li>
+                    <li class="nav-item"><a href="#">Careers</a></li>
+                </ul>
+            </nav>
+            <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="mega-what"><span></span><span></span><span></span></button>
+        </div>
+        <div class="mega who" id="mega-who" role="dialog" aria-modal="false">
+            <div class="mega-inner">
+                <div class="mega-group">
+                    <div>
+                        <div class="mega-title">Who We Are</div>
+                        <div class="mega-desc">We fuel innovation and <br>progress</div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Leadership</a></li>
+                            <li><a href="#">Governance</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="mega-title">Find Out More</div>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mega what" id="mega-what" role="dialog" aria-modal="false">
+            <div class="mega-inner">
+                <div class="mega-group">
+                    <div>
+                        <div class="mega-title">What We Do</div>
+                        <div class="mega-desc">Building diversified businesses <br> across key sectors</div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#">Healthcare</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Agriculture</a></li>
+                            <li><a href="#">Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="mega-title">Find Out More</div>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+          <div class="hero-slider" aria-label="Featured"></div>
+        </section>
+        <section class="split">
+          <div class="split-inner">
+            <div class="split-media">
+              <div class="media-grid">
+                <img src="assets/hero-background.jpg" alt="Gallery image 1">
+                <img src="assets/hero-background.jpg" alt="Gallery image 2">
+                <img src="assets/hero-background.jpg" alt="Gallery image 3">
+              </div>
+            </div>
+            <div class="content">
+              <h2>Who We Are</h2>
+              <h3>We fuel innovation and progress in the UAE</h3>
+              <p>Yas Holding is a renowned UAE investment company with a multi-industry business portfolio, committed to driving performance and unlocking tangible value. We strive to invest in sectors that deliver sustainable growth and contribute to the markets and communities in which we operate.</p>
+              <p>From new business ventures and investments to operations in healthcare, aviation, technology and real estate, we are at the forefront of our industries. Our diverse companies operate across the Middle East and Africa, delivering unparalleled performance.</p>
+              <p>
+                <a href="#" class="cta button">Read More</a>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio">
+          <div class="portfolio-shell">
+            <div class="portfolio-intro">
+              <div class="centered-inner">
+                <h2>What We Do</h2>
+                <h3>Unlocking potential across diverse sectors</h3>
+                <p>Yas Holding pioneers an expansive portfolio of assets across UAE and <br>
+                    international markets. We work within pivotal industry sectors, realising <br>potential and igniting growth.</p>
+              </div>
+            </div>
+            <div class="portfolio-stage">
+              <nav class="portfolio-tabs">
+                <ul class="clean" role="tablist">
+                  <li><a href="#aviation" class="cta active" role="tab" aria-selected="true">Aviation</a></li>
+                  <li><a href="#healthcare" class="cta" role="tab" aria-selected="false">Healthcare</a></li>
+                  <li><a href="#real-estate" class="cta" role="tab" aria-selected="false">Real Estate</a></li>
+                  <li><a href="#technology" class="cta" role="tab" aria-selected="false">Technology</a></li>
+                  <li><a href="#ventures" class="cta" role="tab" aria-selected="false">Ventures</a></li>
+                </ul>
+              </nav>
+              <div class="portfolio-slider" aria-label="Portfolio"></div>
+            </div>
+          </div>
+        </section>
+        <section class="history">
+          <div class="history-panel">
+            <header class="history-header">
+              <div>
+                <h2>Our Journey</h2>
+                <h3>Building a Legacy</h3>
+              </div>
+              <div class="history-buttons">
+                <button class="history-prev" type="button" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="history-next" type="button" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+              </div>
+            </header>
+            <div class="history-slider" aria-label="Timeline"></div>
+          </div>
+        </section>
+        <section class="brands">
+          <div class="brands-shell">
+            <div class="brands-intro centered">
+              <div class="centered-inner">
+                <h2>Featured Operating Companies</h2>
+                <h3>Explore our subsidiaries</h3>
+              </div>
+            </div>
+            <div class="brands-stage">
+              <button class="brand-prev" type="button" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+              <div class="brands-slider" aria-label="Companies"></div>
+              <button class="brand-next" type="button" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </section>
+        <section class="newsroom">
+          <div class="newsroom-inner">
+            <header class="news-header">
+              <div>
+                <h2 class="eyebrow">Newsroom</h2>
+                <h3>Latest Updates &amp; News</h3>
+              </div>
+              <a href="#" class="button cta">Read More News</a>
+            </header>
+            <div class="news-grid">
+              <article class="news-card large">
+                <a href="#news-1" class="news-link">
+                  <picture>
+                    <img src="assets/hero-background.jpg" alt="Joint venture announcement" />
+                  </picture>
+                  <div>
+                    <div class="contentbox">
+                      <div class="meta">
+                        <span class="date">3 Sep 2025</span>
+                        <span class="division">Real Estate</span>
+                      </div>
+                      <h4 class="title">Taraf and Masdar City Form Strategic Joint Venture to Deliver New Sustainable Residential Community in Abu Dhabi’s Flagship Innovation Hub</h4>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="news-card">
+                <a href="#news-2" class="news-link">
+                  <picture>
+                    <img src="assets/hero-background.jpg" alt="Ground breaking ceremony in Dubai" />
+                  </picture>
+                  <div>
+                    <div class="contentbox">
+                      <div class="meta">
+                        <span class="date">30 Jul 2025</span>
+                        <span class="division">Real Estate</span>
+                      </div>
+                      <h4 class="title">Taraf and KARL LAGERFELD Break Ground on KARL LAGERFELD VILLAS in Meydan, Dubai</h4>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="news-card">
+                <a href="#news-3" class="news-link">
+                  <picture>
+                    <img src="assets/hero-background.jpg" alt="Launch of national food champion initiative" />
+                  </picture>
+                  <div>
+                    <div class="contentbox">
+                      <div class="meta">
+                        <span class="date">20 May 2025</span>
+                        <span class="division">Ventures</span>
+                      </div>
+                      <h4 class="title">Al Ain Farms Group Launches as UAE’s National Food Champion, Strengthening Local Production and Regional Reach</h4>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">HOLDING CO.</div>
+          </div>
+          <div>
+            <div class="footer-title">Who We Are</div>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Leadership</a></li>
+              <li><a href="#">Governance</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-title">What We Do</div>
+            <ul class="footer-links">
+              <li><a href="#">Our Portfolio</a></li>
+              <li><a href="#">Aviation</a></li>
+              <li><a href="#">Real Estate</a></li>
+              <li><a href="#">Healthcare</a></li>
+              <li><a href="#">Technology</a></li>
+              <li><a href="#">Ventures</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-title">Find Out More</div>
+            <ul class="footer-links">
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-title">Contact Us</div>
+            <ul class="footer-contact">
+              <li>PO Box</li>
+              <li>Abu Dhabi, UAE</li>
+              <li>PO Box 5254</li>
+              <li>Phone: +971 (02) 614 9000</li>
+              <li>Email: info@holding.co</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-sep"></div>
+        <div class="footer-bottom">
+          <div class="copyright">© Copyright, All rights reserved by Holding Co.</div>
+          <div class="policy-and-social">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#" aria-label="LinkedIn" class="social"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

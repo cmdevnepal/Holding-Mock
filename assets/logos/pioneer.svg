@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+<rect width="300" height="200" fill="#ffffff"/>
+<path d="M40 140 L80 60 L120 140 Z" fill="#E0C341"/>
+<rect x="40" y="140" width="80" height="10" fill="#A78C0A"/>
+<text x="150" y="115" font-size="28" font-family="Arial, sans-serif" fill="#222">PIONEER</text>
+</svg>

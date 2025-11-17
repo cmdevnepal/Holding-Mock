@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+<rect width="300" height="200" fill="#ffffff"/>
+<circle cx="70" cy="100" r="34" fill="#FF3366"/>
+<circle cx="110" cy="100" r="26" fill="#FFC7D1"/>
+<rect x="40" y="140" width="80" height="10" fill="#FF3366"/>
+<text x="150" y="115" font-size="26" font-family="Arial, sans-serif" fill="#222">3DIMENSIONS</text>
+</svg>
