@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const slider = document.querySelector('.hero-slider')
   if (!slider) return
   const data = window.HERO_SLIDES || []
+  const interval = Number(slider.dataset.interval || 6000)
   
   const originalSlides = data.map(item => {
     const slide = document.createElement('div')
@@ -105,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function reset() {
     clearInterval(timer)
-    timer = setInterval(next, 6000)
+    timer = setInterval(next, interval)
   }
   reset()
 

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script defer src="menu.js"></script>
+    <script defer src="portfolio-slider.js"></script>
+    <script defer src="slider.js"></script>
+    <script>
+      window.HERO_SLIDES = [
+        { image: 'assets/hero-background.jpg', title: 'Creating Sustainable Value', link: '#' },
+        { image: 'assets/hero-background.jpg', title: 'Investing with vision, powering growth', link: '#' },
+        { image: 'assets/hero-background.jpg', title: 'Looking ahead to fuel innovation', link: '#' }
+      ]
+      window.PORTFOLIO_SLIDES = [
+        { id: 'collaborative', title: 'Collaborative', description: 'Through open communication and diverse perspectives, we foster teamwork.', image: 'assets/hero-background.jpg', link: '#' },
+        { id: 'trusted', title: 'Trusted', description: 'We build enduring relationships grounded in integrity and accountability.', image: 'assets/hero-background.jpg', link: '#' },
+        { id: 'insightful', title: 'Insightful', description: 'We apply expertise and data-led thinking to drive smarter decisions.', image: 'assets/hero-background.jpg', link: '#' },
+        { id: 'adaptable', title: 'Adaptable', description: 'We embrace change to unlock opportunity and deliver value.', image: 'assets/hero-background.jpg', link: '#' }
+      ]
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">HOLDING CO.</div>
+            <nav class="main-nav" aria-label="Main">
+                <ul>
+                    <li class="nav-item has-mega" data-panel="who"><button class="nav-link" type="button">Who We Are <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button></li>
+                    <li class="nav-item has-mega" data-panel="what"><button class="nav-link" type="button">What We Do <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button></li>
+                    <li class="nav-item"><a href="#">Careers</a></li>
+                </ul>
+            </nav>
+            <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="mega-what"><span></span><span></span><span></span></button>
+        </div>
+        <div class="mega who" id="mega-who" role="dialog" aria-modal="false">
+            <div class="mega-inner">
+                <div class="mega-group">
+                    <div>
+                        <div class="mega-title">Who We Are</div>
+                        <div class="mega-desc">We fuel innovation and <br>progress</div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Leadership</a></li>
+                            <li><a href="#">Governance</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="mega-title">Find Out More</div>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mega what" id="mega-what" role="dialog" aria-modal="false">
+            <div class="mega-inner">
+                <div class="mega-group">
+                    <div>
+                        <div class="mega-title">What We Do</div>
+                        <div class="mega-desc">Building diversified businesses <br> across key sectors</div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#">Healthcare</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Agriculture</a></li>
+                            <li><a href="#">Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="mega-title">Find Out More</div>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero hero--static">
+          <picture>
+            <img src="assets/hero-background.jpg" alt="Investing with vision">
+          </picture>
+          <div class="hero-content">
+            <h2>Investing with vision, powering growth</h2>
+            <a href="#" class="hero-link">READ MORE</a>
+          </div>
+        </section>
+        <section class="split">
+          <div class="split-inner">
+            <div class="split-media">
+              <div class="media-grid">
+                <img src="assets/hero-background.jpg" alt="Gallery image 1">
+                <img src="assets/hero-background.jpg" alt="Gallery image 2">
+                <img src="assets/hero-background.jpg" alt="Gallery image 3">
+              </div>
+            </div>
+            <div class="content">
+              <h2>About Us</h2>
+              <h3>About The Group</h3>
+              <p>We identify and invest in promising opportunities across diverse sectors, delivering sustainable growth and value.</p>
+              <p>Our companies operate across the Middle East and Africa, driving performance and innovation through collaboration.</p>
+              <p>
+                <a href="#" class="cta button">View Our Brand Story</a>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="spacer">
+          <div class="hero-slider" aria-label="Gallery" data-interval="12000"></div>
+        </section>
+        <section class="split">
+          <div class="split-inner">
+            <div class="content">
+              <h2>Purpose</h2>
+              <h3>Creating Sustainable Value</h3>
+              <p>We prioritise resilient, long‑term opportunities and fuel sustainable growth.</p>
+              <p>
+                <a href="#" class="button">Learn More</a>
+              </p>
+            </div>
+            <div class="split-media">
+              <div class="media-grid">
+                <img src="assets/hero-background.jpg" alt="Purpose image 1">
+                <img src="assets/hero-background.jpg" alt="Purpose image 2">
+                <img src="assets/hero-background.jpg" alt="Purpose image 3">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio culture">
+          <div class="portfolio-shell">
+            <div class="portfolio-stage">
+              <div class="culture-title"><h2 class="eyebrow">CULTURE</h2></div>
+              <nav class="portfolio-tabs tabs-inline">
+                <ul class="clean" role="tablist">
+                  <li><a href="#collaborative" class="active" role="tab" aria-selected="true">Collaborative</a></li>
+                  <li><a href="#trusted" role="tab" aria-selected="false">Trusted</a></li>
+                  <li><a href="#insightful" role="tab" aria-selected="false">Insightful</a></li>
+                  <li><a href="#adaptable" role="tab" aria-selected="false">Adaptable</a></li>
+                </ul>
+              </nav>
+              <div class="portfolio-slider" aria-label="Culture"></div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">HOLDING CO.</div>
+          </div>
+          <div>
+            <div class="footer-title">Who We Are</div>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Leadership</a></li>
+              <li><a href="#">Governance</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-title">What We Do</div>
+            <ul class="footer-links">
+              <li><a href="#">Our Portfolio</a></li>
+              <li><a href="#">Aviation</a></li>
+              <li><a href="#">Real Estate</a></li>
+              <li><a href="#">Healthcare</a></li>
+              <li><a href="#">Technology</a></li>
+              <li><a href="#">Ventures</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-title">Find Out More</div>
+            <ul class="footer-links">
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-title">Contact Us</div>
+            <ul class="footer-contact">
+              <li>PO Box</li>
+              <li>Abu Dhabi, UAE</li>
+              <li>PO Box 5254</li>
+              <li>Phone: +971 (02) 614 9000</li>
+              <li>Email: info@holding.co</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-sep"></div>
+        <div class="footer-bottom">
+          <div class="copyright">© Copyright, All rights reserved by Holding Co.</div>
+          <div class="policy-and-social">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#" aria-label="LinkedIn" class="social"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
