@@ -1,36 +1,50 @@
 window.PORTFOLIO_SLIDES = [
   {
-    id: 'aviation',
-    title: 'Aviation',
-    description: 'Connecting people and goods with reliable, efficient air services across the region.',
+    id: 'ecommerce',
+    title: 'Ecommerce',
+    description: 'Building online marketplaces and digital retail experiences that scale.',
     image: 'assets/hero-background.jpg',
     link: '#'
   },
   {
-    id: 'healthcare',
-    title: 'Healthcare',
-    description: 'Transforming care delivery through science-led solutions for lasting patient impact.',
-    image: 'assets/hero-background.jpg',
-    link: '#'
-  },
-  {
-    id: 'real-estate',
-    title: 'Real Estate',
-    description: 'Developing places and communities designed for sustainable growth and everyday life.',
+    id: 'construction',
+    title: 'Construction',
+    description: 'Delivering infrastructure and spaces through efficient, quality builds.',
     image: 'assets/hero-background.jpg',
     link: '#'
   },
   {
     id: 'technology',
     title: 'Technology',
-    description: 'Harnessing the transformative power of technology to accelerate innovation.',
+    description: 'Harnessing cutting-edge solutions to accelerate innovation and growth.',
     image: 'assets/hero-background.jpg',
     link: '#'
   },
   {
-    id: 'ventures',
-    title: 'Ventures',
-    description: 'Investing in high-potential businesses and ideas that reshape the future.',
+    id: 'ai',
+    title: 'AI',
+    description: 'Applying artificial intelligence to create smarter products and operations.',
+    image: 'assets/hero-background.jpg',
+    link: '#'
+  },
+  {
+    id: 'automation',
+    title: 'Automation',
+    description: 'Optimising processes and productivity through intelligent automation.',
+    image: 'assets/hero-background.jpg',
+    link: '#'
+  },
+  {
+    id: 'staffing',
+    title: 'Staffing',
+    description: 'Connecting talent with opportunity and enabling workforce agility.',
+    image: 'assets/hero-background.jpg',
+    link: '#'
+  },
+  {
+    id: 'import-export',
+    title: 'Import & Export',
+    description: 'Facilitating cross-border trade, logistics, and supply chain excellence.',
     image: 'assets/hero-background.jpg',
     link: '#'
   }

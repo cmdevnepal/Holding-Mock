@@ -11,15 +11,15 @@
     <script defer src="slider.js"></script>
     <script>
       window.HERO_SLIDES = [
-        { image: 'assets/hero-background.jpg', title: 'Creating Sustainable Value', link: '#' },
-        { image: 'assets/hero-background.jpg', title: 'Investing with vision, powering growth', link: '#' },
-        { image: 'assets/hero-background.jpg', title: 'Looking ahead to fuel innovation', link: '#' }
+        { image: 'assets/hero-background.jpg', title: 'Creating Sustainable Value', link: 'page.html?title=Creating%20Sustainable%20Value' },
+        { image: 'assets/hero-background.jpg', title: 'Investing with vision, powering growth', link: 'page.html?title=Investing%20with%20vision' },
+        { image: 'assets/hero-background.jpg', title: 'Looking ahead to fuel innovation', link: 'page.html?title=Innovation' }
       ]
       window.PORTFOLIO_SLIDES = [
-        { id: 'collaborative', title: 'Collaborative', description: 'Through open communication and diverse perspectives, we foster teamwork.', image: 'assets/hero-background.jpg', link: '#' },
-        { id: 'trusted', title: 'Trusted', description: 'We build enduring relationships grounded in integrity and accountability.', image: 'assets/hero-background.jpg', link: '#' },
-        { id: 'insightful', title: 'Insightful', description: 'We apply expertise and data-led thinking to drive smarter decisions.', image: 'assets/hero-background.jpg', link: '#' },
-        { id: 'adaptable', title: 'Adaptable', description: 'We embrace change to unlock opportunity and deliver value.', image: 'assets/hero-background.jpg', link: '#' }
+        { id: 'collaborative', title: 'Collaborative', description: 'Through open communication and diverse perspectives, we foster teamwork.', image: 'assets/hero-background.jpg', link: 'page.html?title=Collaborative' },
+        { id: 'trusted', title: 'Trusted', description: 'We build enduring relationships grounded in integrity and accountability.', image: 'assets/hero-background.jpg', link: 'page.html?title=Trusted' },
+        { id: 'insightful', title: 'Insightful', description: 'We apply expertise and data-led thinking to drive smarter decisions.', image: 'assets/hero-background.jpg', link: 'page.html?title=Insightful' },
+        { id: 'adaptable', title: 'Adaptable', description: 'We embrace change to unlock opportunity and deliver value.', image: 'assets/hero-background.jpg', link: 'page.html?title=Adaptable' }
       ]
     </script>
 </head>
@@ -31,7 +31,7 @@
                 <ul>
                     <li class="nav-item has-mega" data-panel="who"><button class="nav-link" type="button">Who We Are <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button></li>
                     <li class="nav-item has-mega" data-panel="what"><button class="nav-link" type="button">What We Do <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button></li>
-                    <li class="nav-item"><a href="#">Careers</a></li>
+                    <li class="nav-item"><a href="page.html?title=Careers">Careers</a></li>
                 </ul>
             </nav>
             <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="mega-what"><span></span><span></span><span></span></button>
@@ -45,18 +45,18 @@
                     </div>
                     <div>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Our Leadership</a></li>
-                            <li><a href="#">Governance</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="page.html?title=Our%20Leadership">Our Leadership</a></li>
+                            <li><a href="page.html?title=Governance">Governance</a></li>
                         </ul>
                     </div>
                 </div>
                 <div>
                     <div class="mega-title">Find Out More</div>
                     <ul>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="page.html?title=Careers">Careers</a></li>
+                        <li><a href="page.html?title=Newsroom">News</a></li>
+                        <li><a href="page.html?title=Contact%20Us">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -70,19 +70,22 @@
                     </div>
                     <div>
                         <ul>
-                            <li><a href="#">Healthcare</a></li>
-                            <li><a href="#">Education</a></li>
-                            <li><a href="#">Agriculture</a></li>
-                            <li><a href="#">Services</a></li>
+                            <li><a href="page.html?title=Ecommerce">Ecommerce</a></li>
+                            <li><a href="page.html?title=Construction">Construction</a></li>
+                            <li><a href="page.html?title=Technology">Technology</a></li>
+                            <li><a href="page.html?title=AI">AI</a></li>
+                            <li><a href="page.html?title=Automation">Automation</a></li>
+                            <li><a href="page.html?title=Staffing">Staffing</a></li>
+                            <li><a href="page.html?title=Import%20%26%20Export">Import &amp; Export</a></li>
                         </ul>
                     </div>
                 </div>
                 <div>
                     <div class="mega-title">Find Out More</div>
                     <ul>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="page.html?title=Careers">Careers</a></li>
+                        <li><a href="page.html?title=Newsroom">News</a></li>
+                        <li><a href="page.html?title=Contact%20Us">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -95,7 +98,7 @@
           </picture>
           <div class="hero-content">
             <h2>Investing with vision, powering growth</h2>
-            <a href="#" class="hero-link">READ MORE</a>
+            <a href="page.html?title=About" class="hero-link">READ MORE</a>
           </div>
         </section>
         <section class="split">
@@ -113,7 +116,7 @@
               <p>We identify and invest in promising opportunities across diverse sectors, delivering sustainable growth and value.</p>
               <p>Our companies operate across the Middle East and Africa, driving performance and innovation through collaboration.</p>
               <p>
-                <a href="#" class="cta button">View Our Brand Story</a>
+                <a href="page.html?title=Brand%20Story" class="cta button">View Our Brand Story</a>
               </p>
             </div>
           </div>
@@ -128,7 +131,7 @@
               <h3>Creating Sustainable Value</h3>
               <p>We prioritise resilient, long‑term opportunities and fuel sustainable growth.</p>
               <p>
-                <a href="#" class="button">Learn More</a>
+                <a href="page.html?title=Purpose" class="button">Learn More</a>
               </p>
             </div>
             <div class="split-media">
@@ -166,28 +169,30 @@
           <div>
             <div class="footer-title">Who We Are</div>
             <ul class="footer-links">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Our Leadership</a></li>
-              <li><a href="#">Governance</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="page.html?title=Our%20Leadership">Our Leadership</a></li>
+              <li><a href="page.html?title=Governance">Governance</a></li>
             </ul>
           </div>
           <div>
             <div class="footer-title">What We Do</div>
             <ul class="footer-links">
-              <li><a href="#">Our Portfolio</a></li>
-              <li><a href="#">Aviation</a></li>
-              <li><a href="#">Real Estate</a></li>
-              <li><a href="#">Healthcare</a></li>
-              <li><a href="#">Technology</a></li>
-              <li><a href="#">Ventures</a></li>
+              <li><a href="page.html?title=Our%20Portfolio">Our Portfolio</a></li>
+              <li><a href="page.html?title=Ecommerce">Ecommerce</a></li>
+              <li><a href="page.html?title=Construction">Construction</a></li>
+              <li><a href="page.html?title=Technology">Technology</a></li>
+              <li><a href="page.html?title=AI">AI</a></li>
+              <li><a href="page.html?title=Automation">Automation</a></li>
+              <li><a href="page.html?title=Staffing">Staffing</a></li>
+              <li><a href="page.html?title=Import%20%26%20Export">Import &amp; Export</a></li>
             </ul>
           </div>
           <div>
             <div class="footer-title">Find Out More</div>
             <ul class="footer-links">
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="page.html?title=Careers">Careers</a></li>
+              <li><a href="page.html?title=Newsroom">News</a></li>
+              <li><a href="page.html?title=Contact%20Us">Contact Us</a></li>
             </ul>
           </div>
           <div>
@@ -205,8 +210,8 @@
         <div class="footer-bottom">
           <div class="copyright">© Copyright, All rights reserved by Holding Co.</div>
           <div class="policy-and-social">
-            <a href="#">Terms of Use</a>
-            <a href="#">Privacy Policy</a>
+            <a href="page.html?title=Terms%20of%20Use">Terms of Use</a>
+            <a href="page.html?title=Privacy%20Policy">Privacy Policy</a>
             <a href="#" aria-label="LinkedIn" class="social"><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
         </div>
